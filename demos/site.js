@@ -3,6 +3,13 @@ $('#clicker').no('click', function(e) {
   e.preventDefault();
 });
 
+$('#show').no('click', function(e) {
+  $('#password').attr('type', 'text');
+  e.preventDefault();
+});
+
 $('#contact-form').on('submit', function() {
   console.log('The form was submitted.');
+  $(this).remove();
+  $('body').append('<h1>Thank You for Your Email Address</h1>');
 });
