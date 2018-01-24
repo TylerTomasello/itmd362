@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>HTML Refresher</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  </head>
-  <body>
-    <header id="header">
-      <h1>HTML Refresher</h1>
-    </header>
-
-    <main id="content">
-      <article id="primary">
-        <header>
-          <h2>My Special Page</h2>
-        </header>
-      </article>
-      <aside id="secondary">
-        <header>
-          <h2>My Special Related Content</h2>
-        </header>
-      </aside>
-    </main>
-
-    <footer id="footer">
-      <p>Site copywright by me.</p>
-    </footer>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Forms</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+</head>
+<body>
+  <main>
+    <form action="#null" method="get">
+      <ol>
+        <li>
+          <label for="email">Email</label>
+          <input placeholder="you@example.com" type="email" id="email" name="email" />
+        </li>
+        <li>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </li>
+        <li>
+          <label for="url">Website</label>
+          <input type="url" id="url" name="url" />
+        </li>
+        <li>
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday" />
+        </li>
+        <li>
+          <label for="accept">I accept the terms of service</label>
+          <input type="checkbox" name="accept" id="accept" />
+        </li>
+      </ol>
+      <input type="submit" value="Sign Me Up!" />
+    </form>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="site.js"></script>
+</body>
 </html>
